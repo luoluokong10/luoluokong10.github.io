@@ -60,5 +60,5 @@
 ---
 
 > 作者: luoluo  
-> URL: https://example.org/2025/04/hello/  
+> URL: https://luoluokong10.github.io/2025/04/hello/  
 
