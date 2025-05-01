@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Wed, 30 Apr 2025 22:37:11 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Matlab 绘图</title><link>https://luoluokong10.github.io/2025/04/matlab-draw/</link><pubDate>Wed, 30 Apr 2025 22:37:11 +0800</pubDate><guid>https://luoluokong10.github.io/2025/04/matlab-draw/</guid><category domain="https://luoluokong10.github.io/categories/%E7%BB%98%E5%9B%BE/">绘图</category><description>&lt;h2 class="heading-element" id="简介">&lt;span>简介&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Thu, 01 May 2025 09:33:15 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>ggplot2 绘图</title><link>https://luoluokong10.github.io/2025/05/ggplot2-draw/</link><pubDate>Thu, 01 May 2025 09:33:15 +0800</pubDate><guid>https://luoluokong10.github.io/2025/05/ggplot2-draw/</guid><category domain="https://luoluokong10.github.io/categories/%E7%BB%98%E5%9B%BE/">绘图</category><description>&lt;blockquote>
+&lt;p>参考 &lt;a href="https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook/ggplot2.html#"target="_blank" rel="external nofollow noopener noreferrer">R语言教程-李东风&lt;/a>
+&lt;a href="https://r4ds.had.co.nz/data-visualisation.html"target="_blank" rel="external nofollow noopener noreferrer">R for Data Science&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h2 class="heading-element" id="简介">&lt;span>简介&lt;/span>
+ &lt;a href="#%e7%ae%80%e4%bb%8b" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>ggplot2包是R的一个作图用的扩展包， 它实现了“图形的语法”， 将一个作图任务分解为若干个子任务， 只要完成各个子任务就可以完成作图。 在作常用的图形时， 只需要两个步骤： 首先将图形所展现的数据输入到ggplot()函数中， 然后调用某个geom_xxx()函数， 指定图形类型，如散点图、曲线图、盒形图等。&lt;/p>
+&lt;p>本质上，ggplot2 是对 R 语言绘图能力的一次高级封装。它引入了图层语法，以数据为核心，通过映射（aesthetic mapping）、几何对象（geoms）、统计变换（stats）等组件构建图像。相比传统绘图方式中对“画布元素”逐个添加的思路，ggplot2 更注重语义表达，使绘图过程更具逻辑性和可读性。&lt;/p>
+&lt;p>与 MATLAB 的绘图系统相比，ggplot2 更接近“数据可视化”范式而非“函数图像绘制”范式。MATLAB 更强调通过函数表达式控制图形细节，适合工程、信号处理等领域的数学函数可视化；而 ggplot2 更关注数据结构与变量间关系的呈现，更适用于统计建模、数据分析、科研可视化等场景。因此，ggplot2 与数据的耦合度更高。&lt;/p>
+&lt;p>作图流程：&lt;/p>
+&lt;ol>
+&lt;li>准备数据，data frame，长表(每行是一个观测对象，每列是一种属性);&lt;/li>
+&lt;li>数据输入到ggplot()函数中, 指定参与作图的每个变量分别映射到哪些图形特性， 比如映射为x坐标、y坐标、颜色、形状等;&lt;/li>
+&lt;li>选择一个合适的图形类型， 函数名以geom_开头， 如geom_point()表示散点图。 图形类型简称为geom。 将ggplot()部分与geom_xxx()部分用加号连接。 到此已经可以作图，下面的步骤是进一步的细化设定;&lt;/li>
+&lt;li>设定适当的坐标系统， 如coord_cartesian(), scale_x_log10()等。 仍用加号连接;&lt;/li>
+&lt;li>设定标题和图例位置等，如labs()。 仍用加号连接。&lt;/li>
+&lt;/ol>
+&lt;p>模版&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-R" data-lang="R">&lt;span class="line">&lt;span class="cl">&lt;span class="n">p&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="nf">ggplot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="o">=&amp;lt;&lt;/span>输入数据框&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">mapping&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nf">aes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>维度&lt;span class="o">&amp;gt;=&amp;lt;&lt;/span>变量名&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">&amp;lt;&lt;/span>维度&lt;span class="o">&amp;gt;=&amp;lt;&lt;/span>变量名&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kc">...&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">p&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">geom_&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>图形类型&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kc">...&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span> 
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">scale_&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>映射&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="n">_&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>类型&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kc">...&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">coord_&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>类型&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kc">...&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">+&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nf">labs&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="kc">...&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 class="heading-element" id="实例">&lt;span>实例&lt;/span>
+ &lt;a href="#%e5%ae%9e%e4%be%8b" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-R" data-lang="R">&lt;span class="line">&lt;span class="cl">&lt;span class="nf">library&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">tidyverse&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="c1"># 加载数据集和ggplot2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mpg&lt;/span> &lt;span class="c1"># 美国环境保护署对 38 种汽车型号的观察结果&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">p&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="nf">ggplot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mpg&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">p&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nf">geom_point&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">mapping&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nf">aes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="o">=&lt;/span> &lt;span class="n">displ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">hwy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">color&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class&lt;/span>&lt;span class="p">))&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Matlab 绘图</title><link>https://luoluokong10.github.io/2025/04/matlab-draw/</link><pubDate>Wed, 30 Apr 2025 22:37:11 +0800</pubDate><guid>https://luoluokong10.github.io/2025/04/matlab-draw/</guid><category domain="https://luoluokong10.github.io/categories/%E7%BB%98%E5%9B%BE/">绘图</category><description>&lt;h2 class="heading-element" id="简介">&lt;span>简介&lt;/span>
  &lt;a href="#%e7%ae%80%e4%bb%8b" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -148,10 +203,10 @@
  &lt;p class="repo-statistics">&lt;span class="repo-lang">
  &lt;span class="repo-lang-color" style="background-color: #dea584;">&lt;/span>
  &lt;span itemprop="programmingLanguage">Rust&lt;/span>
- &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="51992 stars" class="repo-stars" target="_blank">
+ &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="52009 stars" class="repo-stars" target="_blank">
  &lt;svg aria-label="stars" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
  &lt;path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">&lt;/path>
- &lt;/svg>52.0k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1461 forks" class="repo-forks" target="_blank">
+ &lt;/svg>52.0k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1462 forks" class="repo-forks" target="_blank">
  &lt;svg aria-label="forks" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked">
  &lt;path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">&lt;/path>
  &lt;/svg>1.5k&lt;/a>&lt;/p>&lt;/div>
