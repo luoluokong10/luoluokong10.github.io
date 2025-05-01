@@ -1,6 +1,8 @@
 # uv -- 最强Python项目管理工具
 
-
+{{< gh-repo-card-container >}}
+  {{< gh-repo-card repo="astral-sh/uv" >}}
+{{< /gh-repo-card-container >}}
 ## 简介
 
 作为著名的调包语言，python的包管理/依赖安装一直是一个糟心的事情，特别是现在系统级的包管理器均拒绝pip全局安装，使用虚拟环境是唯一之举。
