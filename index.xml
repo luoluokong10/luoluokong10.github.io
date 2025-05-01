@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Wed, 30 Apr 2025 21:08:05 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>VSCode for Matlab</title><link>https://luoluokong10.github.io/2025/04/vscode-for-matlab/</link><pubDate>Wed, 30 Apr 2025 21:08:05 +0800</pubDate><guid>https://luoluokong10.github.io/2025/04/vscode-for-matlab/</guid><category domain="https://luoluokong10.github.io/categories/vscode/">Vscode</category><description>&lt;img src="https://luoluokong10.github.io/pictures/matlab-vscode.png" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="简介">&lt;span>简介&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Wed, 30 Apr 2025 22:37:11 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Matlab 绘图</title><link>https://luoluokong10.github.io/2025/04/matlab-draw/</link><pubDate>Wed, 30 Apr 2025 22:37:11 +0800</pubDate><guid>https://luoluokong10.github.io/2025/04/matlab-draw/</guid><category domain="https://luoluokong10.github.io/categories/%E7%BB%98%E5%9B%BE/">绘图</category><description>&lt;h2 class="heading-element" id="简介">&lt;span>简介&lt;/span>
+ &lt;a href="#%e7%ae%80%e4%bb%8b" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>Matlab 通常使用面向过程写法，也支持面向对象。绘图的过程非常切合面向对象的思想，在底层也是如此实现的。&lt;/p>
+&lt;p>尽管matlab支持函数式的绘图，但是这样的操作仅适合一些简单单图的处理。&lt;/p>
+&lt;h3 class="heading-element" id="图形对象层次结构">&lt;span>图形对象层次结构&lt;/span>
+ &lt;a href="#%e5%9b%be%e5%bd%a2%e5%af%b9%e8%b1%a1%e5%b1%82%e6%ac%a1%e7%bb%93%e6%9e%84" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>oop的绘图，就是摊开画布往上面添加元素，这些元素的包含关系即对象父子关系，具有层级结构。&lt;/p>
+&lt;p>通过引用将对象地址赋予变量，然后访问属性、方法来定制图像。&lt;/p>
+&lt;p>&lt;img loading="lazy" src='https://luoluokong10.github.io/pictures/doccenter_graphicsheirarchy.png' alt="层级结构图形对象的组织">&lt;/p>
+&lt;p>matlab的绘图层级，主要是 Figure - Axes - 各种函数对应的图形 以及它们上面的一些控件/文本/标记&lt;/p>
+&lt;p>直接使用函数绘图，仍然在后台构造对象(gcf, gca, gco)，只是未显式操作它们。&lt;/p>
+&lt;h3 class="heading-element" id="实例">&lt;span>实例&lt;/span>
+ &lt;a href="#%e5%ae%9e%e4%be%8b" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;blockquote>
+&lt;p>在交互环境一行行执行即可看到对应的效果&lt;/p>&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-matlab" data-lang="matlab">&lt;span class="line">&lt;span class="cl">&lt;span class="n">fg&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">figure&lt;/span>&lt;span class="p">;&lt;/span> # 创建&lt;span class="n">figure实例&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">ax&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">axes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#39;parent&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">fg&lt;/span>&lt;span class="p">);&lt;/span> # 创建&lt;span class="n">axes实例&lt;/span>，指定父级
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">x&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">linspace&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">line&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">plot&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">sin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">));&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>使用 get()查看所有所有属性和值; properties 可用属性; inspect 交互式属性查看器.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-matlab" data-lang="matlab">&lt;span class="line">&lt;span class="cl">&lt;span class="n">line&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">LineStyle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#39;:&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">ax&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">FontSize&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">16&lt;/span>&lt;span class="p">;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>关于属性的效果参考 &lt;a href="https://ww2.mathworks.cn/help/matlab/graphics-object-properties.html?s_tid=CRUX_lftnav"target="_blank" rel="external nofollow noopener noreferrer">mathwork&lt;/a>&lt;/p>
+&lt;h2 class="heading-element" id="实战">&lt;span>实战&lt;/span>
+ &lt;a href="#%e5%ae%9e%e6%88%98" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h3 class="heading-element" id="封装散点图线性拟合">&lt;span>封装散点图+线性拟合&lt;/span>
+ &lt;a href="#%e5%b0%81%e8%a3%85%e6%95%a3%e7%82%b9%e5%9b%be%e7%ba%bf%e6%80%a7%e6%8b%9f%e5%90%88" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;h3 class="heading-element" id="局部放大">&lt;span>局部放大&lt;/span>
+ &lt;a href="#%e5%b1%80%e9%83%a8%e6%94%be%e5%a4%a7" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3></description></item><item><title>VSCode for Matlab</title><link>https://luoluokong10.github.io/2025/04/vscode-for-matlab/</link><pubDate>Wed, 30 Apr 2025 21:08:05 +0800</pubDate><guid>https://luoluokong10.github.io/2025/04/vscode-for-matlab/</guid><category domain="https://luoluokong10.github.io/categories/vscode/">Vscode</category><description>&lt;img src="https://luoluokong10.github.io/pictures/matlab-vscode.png" alt="featured image" referrerpolicy="no-referrer">&lt;h2 class="heading-element" id="简介">&lt;span>简介&lt;/span>
  &lt;a href="#%e7%ae%80%e4%bb%8b" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
