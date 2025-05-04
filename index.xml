@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Fri, 02 May 2025 11:07:35 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Navier-Stokes 方程 -- 概述</title><link>https://luoluokong10.github.io/2025/05/n-s/</link><pubDate>Fri, 02 May 2025 11:07:35 +0800</pubDate><guid>https://luoluokong10.github.io/2025/05/n-s/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Sun, 04 May 2025 22:16:32 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>我的 24 年</title><link>https://luoluokong10.github.io/2025/05/24-years/</link><pubDate>Sun, 04 May 2025 22:16:32 +0800</pubDate><guid>https://luoluokong10.github.io/2025/05/24-years/</guid><description>&lt;blockquote>
+&lt;p>度过今日，我已在这个世界行走24年。&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>24年，看起来遥不可及，但是我好像还没长大，就已经变老了。&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>至少目前来看，满是遗憾。&lt;/p>&lt;/blockquote>
+&lt;p>我不知道自己是否是个庸人，我一直很自负，我不是个蠢人。我也很自卑，因为我几乎一无所有。&lt;/p>
+&lt;p>我记得很久之前，我读到过一句话，&amp;ldquo;我深怕自己本非美玉，故而不敢加以刻苦琢磨，却又半信自己是块美玉，故又不肯庸庸碌碌，与瓦砾为伍。&amp;rdquo; 当时我以为是我的写照，现在发现只符合后半句。&lt;/p>
+&lt;p>因为不知从何时起，我失去了真正学习的能力。我不知道我是不是冷血的人，我爱好非常广泛，但是放弃任何一个又轻而易举；我对身边的朋友亲人非常用心，但是一旦分开后的我就不再联系。都说患得患失，在我这里任何东西好像放弃都很随意。我失去了真正学习的能力，失去了对任何事物持久的爱。&lt;/p>
+&lt;p>我觉得我学习速度是很快的，与之相伴的是我的遗忘速度。加上我喜欢什么都掺和一脚，然后浅尝辄止，造成了我什么都会一点，都不精通的尴尬。哪怕是用了很久的东西，我都没有想过深入了解一下。我用 Linux 5年了，从 kali 到 arch 换了个遍，但对于内核、模块一无所知，仅仅局限于折腾点小工具；我英语阅读一直很好，虽然单词量堪忧更不会拼写，猜意思却总是很顺利以至于英语从来没拖过我的后腿，我为这些沾沾自喜而从没有想过更进一步。我总是保持在一种比普通人强一点的水平，完全没有往更专业一点的发展；我很喜欢古诗词，小学就背诵过洛神赋，但是直到今天最后一点我还是卡壳，永远都是对前面非常熟悉，却没有下点心完整的获得&amp;hellip;&amp;hellip;我有过太多的机会，却总是向它们轻易的挥手。&lt;/p>
+&lt;p>所以我的人生充满了遗憾，我看似什么都会，但是一无所有，空洞的走完24年。&lt;/p>
+&lt;p>我不太喜欢反思自己，因为这会让我的自负完全转换为自卑，我处在高不成低不就的尴尬，越是这样我越害怕看自己的影子。但是我已经开始变老了，我没有更多去挥霍了。我并非不敢加以刻苦琢磨，而是从来都没有过这个打算，我不是不喜欢某些东西，而是浅尝辄止早已成为习惯。又因为不肯庸庸碌碌，所以我广泛培养兴趣，涉猎广泛却又草草结束。于人于事，无不如此。&lt;/p>
+&lt;p>现在我鼓起勇气，看向这游戏了24年的影子，我忽然想起来我姐姐，如果当初我没有出生，她一定会活得无比热烈，不必东躲西藏怀病离去。我没有背负起你的生命，你总是那么地聪明，我却搞糟了一切&amp;hellip;&amp;hellip;&lt;/p>
+&lt;p>好在，只是1/4.&lt;/p></description></item><item><title>Navier-Stokes 方程 -- 概述</title><link>https://luoluokong10.github.io/2025/05/n-s/</link><pubDate>Fri, 02 May 2025 11:07:35 +0800</pubDate><guid>https://luoluokong10.github.io/2025/05/n-s/</guid><description>&lt;blockquote>
 &lt;p>标准的 Navier-Stokes 方程&lt;/p>&lt;/blockquote>
 &lt;p>$$
 \partial_t u + (u\cdot\nabla) u - \Delta u + \nabla p = 0
@@ -248,10 +261,10 @@ $$&lt;/p>
  &lt;p class="repo-statistics">&lt;span class="repo-lang">
  &lt;span class="repo-lang-color" style="background-color: #dea584;">&lt;/span>
  &lt;span itemprop="programmingLanguage">Rust&lt;/span>
- &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="52195 stars" class="repo-stars" target="_blank">
+ &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="52453 stars" class="repo-stars" target="_blank">
  &lt;svg aria-label="stars" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
  &lt;path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">&lt;/path>
- &lt;/svg>52.2k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1467 forks" class="repo-forks" target="_blank">
+ &lt;/svg>52.5k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1478 forks" class="repo-forks" target="_blank">
  &lt;svg aria-label="forks" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked">
  &lt;path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">&lt;/path>
  &lt;/svg>1.5k&lt;/a>&lt;/p>&lt;/div>
