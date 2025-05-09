@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Fri, 09 May 2025 11:37:03 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>概述 -- 如何学习</title><link>https://luoluokong10.github.io/learning/content/</link><pubDate>Fri, 09 May 2025 09:21:10 +0800</pubDate><guid>https://luoluokong10.github.io/learning/content/</guid><description>&lt;h2 class="heading-element" id="引">&lt;span>引&lt;/span>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Fri, 09 May 2025 14:04:18 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>python 笔记 -- 目录</title><link>https://luoluokong10.github.io/python/content/</link><pubDate>Fri, 09 May 2025 12:22:49 +0800</pubDate><guid>https://luoluokong10.github.io/python/content/</guid><description>&lt;div class="details admonition info open">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>信息&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;p>个人理解，区分python和其他语言最关键的就是python的类型/对象机制，更详细一点是统一对象模型和动态强类型系统。体现在：&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>一切皆对象&lt;/p>
+&lt;p>值、函数、类、模块均是对象，从对象角度看细节实现；同时赋予了python动态创建类的能力；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>动态类型&lt;/p>
+&lt;p>变量没有固定类型，类型绑定在值上，变量不过是对象的地址引用，可以低成本切换；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>统一对象模型&lt;/p>
+&lt;p>所有类型均为 &lt;code>type&lt;/code> 的实例，高度的统一性使得每个单元可以有统一的行为，遵循同一套对象模型。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>因此，在这种机制基础上学习python的基本概念，才是最本质的认识。&lt;/p>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+&lt;h2 class="heading-element" id="1-运行机制与表达能力">&lt;span>1. 运行机制与表达能力&lt;/span>
+ &lt;a href="#1-%e8%bf%90%e8%a1%8c%e6%9c%ba%e5%88%b6%e4%b8%8e%e8%a1%a8%e8%be%be%e8%83%bd%e5%8a%9b" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h2 class="heading-element" id="2-控制结构与数据结构">&lt;span>2. 控制结构与数据结构&lt;/span>
+ &lt;a href="#2-%e6%8e%a7%e5%88%b6%e7%bb%93%e6%9e%84%e4%b8%8e%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h2 class="heading-element" id="3-抽象与封装">&lt;span>3. 抽象与封装&lt;/span>
+ &lt;a href="#3-%e6%8a%bd%e8%b1%a1%e4%b8%8e%e5%b0%81%e8%a3%85" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2></description></item><item><title>概述 -- 如何学习</title><link>https://luoluokong10.github.io/learning/content/</link><pubDate>Fri, 09 May 2025 09:21:10 +0800</pubDate><guid>https://luoluokong10.github.io/learning/content/</guid><description>&lt;h2 class="heading-element" id="引">&lt;span>引&lt;/span>
  &lt;a href="#%e5%bc%95" class="heading-mark">
  &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
  &lt;/a>
@@ -317,10 +351,10 @@ $$&lt;/p>
  &lt;p class="repo-statistics">&lt;span class="repo-lang">
  &lt;span class="repo-lang-color" style="background-color: #dea584;">&lt;/span>
  &lt;span itemprop="programmingLanguage">Rust&lt;/span>
- &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="53138 stars" class="repo-stars" target="_blank">
+ &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="53147 stars" class="repo-stars" target="_blank">
  &lt;svg aria-label="stars" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
  &lt;path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">&lt;/path>
- &lt;/svg>53.1k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1497 forks" class="repo-forks" target="_blank">
+ &lt;/svg>53.1k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1498 forks" class="repo-forks" target="_blank">
  &lt;svg aria-label="forks" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked">
  &lt;path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">&lt;/path>
  &lt;/svg>1.5k&lt;/a>&lt;/p>&lt;/div>
