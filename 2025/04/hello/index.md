@@ -57,6 +57,14 @@
 - 有序
 - 标记
 
+## 数学公式
+
+\begin{CD}
+   A @>a\>> B \\\\
+@VbVV @AAcA \\\\
+   C @= D
+\end{CD}
+
 ---
 
 > 作者: luoluo  
