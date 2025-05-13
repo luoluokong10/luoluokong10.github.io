@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Fri, 09 May 2025 14:04:18 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>python 笔记 -- 目录</title><link>https://luoluokong10.github.io/python/content/</link><pubDate>Fri, 09 May 2025 12:22:49 +0800</pubDate><guid>https://luoluokong10.github.io/python/content/</guid><description>&lt;div class="details admonition info open">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo</title><link>https://luoluokong10.github.io/</link><description>Hugo</description><generator>Hugo 0.147.0 &amp; FixIt v0.3.20</generator><language>zh-CN</language><lastBuildDate>Tue, 13 May 2025 18:29:19 +0800</lastBuildDate><atom:link href="https://luoluokong10.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>01 - 吸引子</title><link>https://luoluokong10.github.io/notes/01/</link><pubDate>Tue, 13 May 2025 17:26:54 +0800</pubDate><guid>https://luoluokong10.github.io/notes/01/</guid><description>&lt;blockquote>
+&lt;p>&lt;a href="https://www.bilibili.com/video/BV1vw411Y7gS"target="_blank" rel="external nofollow noopener noreferrer">课程链接&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;h2 class="heading-element" id="动机">&lt;span>动机&lt;/span>
+ &lt;a href="#%e5%8a%a8%e6%9c%ba" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>为了描述 PDEs 解的长期行为，特别是当 $t\to \infty$ 时的极限行为，引入吸引子理论。&lt;/p>
+&lt;p>\begin{CD}
+u_0 @&amp;gt;t\leq t_{\varepsilon}&amp;gt;&amp;gt; 落入\mathscr{A} \\
+@Vt\to\infty VV @VVt\geq t_{\varepsilon}V \\
+S(t)u_0 @&amp;lt; &amp;lt;&amp;lt; ode约化
+\end{CD}&lt;/p>
+&lt;p>在有限时间 $t_\varepsilon$ 解落入吸引子(集合) $\mathscr{A}$ 的 $\varepsilon$ 邻域；借助计算方法处理，如 Galerkin 方法；&lt;/p>
+&lt;p>在无穷时间，考虑进行有限约化，转换为 $ode$ 方程去处理。&lt;/p>
+&lt;h3 class="heading-element" id="约化方法">&lt;span>约化方法&lt;/span>
+ &lt;a href="#%e7%ba%a6%e5%8c%96%e6%96%b9%e6%b3%95" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>当分型维数 $\dim_f(\mathscr{A}) \leq n$，存在平面 $L\sim \mathbb{R}^{2n+1}$.&lt;/p>
+&lt;p>考虑投影算子 $P: A\to PA \subset L$, 方程 $u_t=F(u)$&lt;/p>
+&lt;p>作用投影算子 $Pu_t = PF(u) = PF(P^{-1}\cdot Pu)$ 转换为有限维ode，需要确保 $P^{-1}$ 存在。&lt;/p>
+&lt;p>一般的 $P^{-1}$ 只能保证 Holder 连续, 达不到 ode 解存在唯一的 Lipschitz 连续，结果可能不唯一。&lt;/p>
+&lt;p>不过此方法与空间结构无关，仅依赖维数。可以考虑进一步的投影/截断 &amp;hellip;&lt;/p>
+&lt;h2 class="heading-element" id="吸引子">&lt;span>吸引子&lt;/span>
+ &lt;a href="#%e5%90%b8%e5%bc%95%e5%ad%90" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;blockquote>
+&lt;p>讨论方程上的吸引子&lt;/p>&lt;/blockquote>
+&lt;p>考虑自治方程
+$$
+\begin{cases}
+u(t) = F(u) \\
+u(0) = u_0 \in X,
+\end{cases}
+$$&lt;/p>
+&lt;p>其中 $X$ 是 Hausdorff 空间(任意两点可由邻域分离)；解算子 $S(t)$ 满足半群性质。&lt;/p>
+&lt;p>因为要刻画靠近/吸引的概念，从拓扑上表现为集合的包含、度量上表现为距离的接近，有两种定义，拓扑更本质更广泛；存在不可度量化的拓扑空间，因此从拓扑上考虑吸引子的定义。&lt;/p>
+&lt;h3 class="heading-element" id="定义拓扑">&lt;span>定义(拓扑)&lt;/span>
+ &lt;a href="#%e5%ae%9a%e4%b9%89%e6%8b%93%e6%89%91" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>集合 $\mathscr{A}$ 称为 $B$-吸引子，对某类集 $B\subset 2^X$(满足某些性质，比如在度量意义下，为有界集), 满足&lt;/p>
+&lt;ol>
+&lt;li>$\mathscr{A}$ 紧；&lt;/li>
+&lt;li>吸引：$\forall B_1\in B, \exists t_0=t_0(\varepsilon, B_1)$, 使得 $t&amp;gt;t_0, S(t)B\subset \mathscr{A}(\varepsilon)$;&lt;/li>
+&lt;li>$\mathscr{A}$ 是满足 1 2 的最小集合.&lt;/li>
+&lt;/ol>
+&lt;p>当 $\mathscr{A}$ 是不变集，条件3满足；条件3 + 算子连续 =&amp;gt; $\mathscr{A}$ 是不变集.&lt;/p>
+&lt;h3 class="heading-element" id="存在性定理">&lt;span>存在性定理&lt;/span>
+ &lt;a href="#%e5%ad%98%e5%9c%a8%e6%80%a7%e5%ae%9a%e7%90%86" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;h3 class="heading-element" id="度量空间">&lt;span>度量空间&lt;/span>
+ &lt;a href="#%e5%ba%a6%e9%87%8f%e7%a9%ba%e9%97%b4" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3></description></item><item><title>python 笔记 -- 目录</title><link>https://luoluokong10.github.io/python/content/</link><pubDate>Fri, 09 May 2025 12:22:49 +0800</pubDate><guid>https://luoluokong10.github.io/python/content/</guid><description>&lt;div class="details admonition info open">
  &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-circle-info" aria-hidden="true">&lt;/i>信息&lt;i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true">&lt;/i>&lt;/div>
  &lt;div class="details-content">
  &lt;div class="admonition-content">&lt;p>个人理解，区分python和其他语言最关键的就是python的类型/对象机制，更详细一点是统一对象模型和动态强类型系统。体现在：&lt;/p>
@@ -351,10 +408,10 @@ $$&lt;/p>
  &lt;p class="repo-statistics">&lt;span class="repo-lang">
  &lt;span class="repo-lang-color" style="background-color: #dea584;">&lt;/span>
  &lt;span itemprop="programmingLanguage">Rust&lt;/span>
- &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="53147 stars" class="repo-stars" target="_blank">
+ &lt;/span>&lt;a href="https://github.com/astral-sh/uv/stargazers" title="53821 stars" class="repo-stars" target="_blank">
  &lt;svg aria-label="stars" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star">
  &lt;path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">&lt;/path>
- &lt;/svg>53.1k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1498 forks" class="repo-forks" target="_blank">
+ &lt;/svg>53.8k&lt;/a>&lt;a href="https://github.com/astral-sh/uv/forks" title="1511 forks" class="repo-forks" target="_blank">
  &lt;svg aria-label="forks" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked">
  &lt;path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">&lt;/path>
  &lt;/svg>1.5k&lt;/a>&lt;/p>&lt;/div>
