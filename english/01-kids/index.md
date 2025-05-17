@@ -50,20 +50,21 @@
 | some  | none  | all   | most  |
 | least | equal |       |       |
 
-### 动物、自然(33)
+### 动物、自然(38)
 
-| Word    | Word     | Word   | Word   |
-| ------- | -------- | ------ | ------ |
-| cat     | dog      | bird   | fish   |
-| cow     | horse    | lion   | tiger  |
-| bear    | elephant | monkey | rabbit |
-| duck    | pig      | sheep  | goat   |
-| chicken | frog     | snake  | turtle |
-| sun     | rain     | snow   | wind   |
-| cloud   | tree     | flower | grass  |
-| leaf    | sky      |        |        |
-| sunny   | rainy    | snowy  | windy  |
-| cloudy  |          |        |        |
+| Word    | Word     | Word    | Word   |
+| ------- | -------- | ------- | ------ |
+| cat     | dog      | bird    | fish   |
+| cow     | horse    | lion    | tiger  |
+| bear    | elephant | monkey  | rabbit |
+| duck    | pig      | sheep   | goat   |
+| chicken | frog     | snake   | turtle |
+| sun     | rain     | snow    | wind   |
+| cloud   | tree     | flower  | grass  |
+| leaf    | sky      | moutain | hill   |
+| lake    |          |         |        |
+| sunny   | rainy    | snowy   | windy  |
+| cloudy  |          |         |        |
 
 ### 家庭、日常用品(27)
 
