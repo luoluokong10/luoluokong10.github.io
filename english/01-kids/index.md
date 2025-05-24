@@ -5,17 +5,17 @@
 
 ### 家庭成员、身体结构(32)
 
-| Word    | Word    | Word     | Word   |
-| ------- | ------- | -------- | ------ |
-| mom     | dad     | brother  | sister |
-| grandma | grandpa | baby     | uncle  |
-| aunt    | cusion  |          |        |
-| hair    | head    | eye      | ear    |
-| nose    | mouse   | face     | teeth  |
-| tongue  | neck    | shoulder | arm    |
-| arm     | hand    | finger   | leg    |
-| foot    | toe     | knee     | elbow  |
-| back    | stomach |          |        |
+| Word    | Word    | Word     | Word    |
+| ------- | ------- | -------- | ------- |
+| mom     | dad     | brother  | sister  |
+| grandma | grandpa | baby     | uncle   |
+| aunt    | cusion  |          |         |
+| hair    | head    | eye      | ear     |
+| nose    | mouse   | face     | teeth   |
+| tongue  | neck    | shoulder | stomach |
+| arm     | hand    | finger   | leg     |
+| foot    | toe     | knee     | elbow   |
+| back    |         |          |         |
 
 ### 情感、感受(22)
 
