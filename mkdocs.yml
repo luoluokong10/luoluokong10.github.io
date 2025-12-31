@@ -1,0 +1,32 @@
+site_name: Blog
+site_description: Personal blog
+site_url: https://luoluokong10.github.io/
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  custom_dir: overrides
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+
+
+nav:
+  - Home:
+    - index.md
