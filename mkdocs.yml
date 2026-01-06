@@ -26,6 +26,9 @@ theme:
     - navigation.top
     - content.code.copy
 
+plugins:
+  - document-dates:
+      show_author: false
 
 nav:
   - Home:

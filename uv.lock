@@ -151,12 +151,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "mkdocs" },
+    { name = "mkdocs-document-dates" },
     { name = "mkdocs-material" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "mkdocs", specifier = ">=1.6.1" },
+    { name = "mkdocs-document-dates", specifier = ">=3.5.2" },
     { name = "mkdocs-material", specifier = ">=9.7.1" },
 ]
 
@@ -264,6 +266,15 @@ sdist = { url = "https://files.pythonhosted.org/packages/bc/c6/bbd4f061bd16b3782
 wheels = [
     { url = "https://files.pythonhosted.org/packages/22/5b/dbc6a8cddc9cfa9c4971d59fb12bb8d42e161b7e7f8cc89e49137c5b279c/mkdocs-1.6.1-py3-none-any.whl", hash = "sha256:db91759624d1647f3f34aa0c3f327dd2601beae39a366d6e064c03468d35c20e", size = 3864451, upload-time = "2024-08-30T12:24:05.054Z" },
 ]
+
+[[package]]
+name = "mkdocs-document-dates"
+version = "3.5.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ca/b9/ed763ed3f5abfecfafe6a23d9a202234fbc6445f1a45be9bc03142d25203/mkdocs_document_dates-3.5.2.tar.gz", hash = "sha256:4d20ac2287e5c4924dad737ae31a3240395492d5d93211548d6eda5f39efdcad", size = 185960, upload-time = "2025-12-26T06:44:33.759Z" }
 
 [[package]]
 name = "mkdocs-get-deps"
